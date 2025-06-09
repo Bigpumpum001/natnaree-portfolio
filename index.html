@@ -57,8 +57,15 @@
             transition: all 0.3s ease;
         }
 
+        .navbar-nav {
+            z-index: 9999;
+            background-color: white;
+            padding-bottom: 1rem;
+        }
+
         .navbar.scrolled {
-            background: rgba(26, 26, 26, 0.95);
+            /* background: rgba(26, 26, 26, 0.95); */
+            background-color: var(--cream);
             backdrop-filter: blur(10px);
         }
 
@@ -533,15 +540,19 @@
             opacity: 1;
             transform: scale(1.02);
         }
-@media (max-width: 1199px) {
-           .portfolio-text,.portfolio-outline {
-            font-size: clamp(4rem, 12vw, 6rem);
-         
+
+        @media (max-width: 1199px) {
+
+            .portfolio-text,
+            .portfolio-outline {
+                font-size: clamp(4rem, 12vw, 6rem);
+
+
+            }
+
 
         }
 
-    
-        }
         @media (max-width: 991px) {
             .hero {
                 padding-top: 5rem;

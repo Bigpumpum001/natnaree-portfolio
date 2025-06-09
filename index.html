@@ -57,17 +57,28 @@
             transition: all 0.3s ease;
         }
 
-        .navbar-nav {
-            z-index: 9999;
-            background-color: white;
+        
+
+        .navbar-collapse {
             padding-bottom: 1rem;
+            background-color: white;
+            backdrop-filter: blur(10px);
+
         }
 
-        .navbar.scrolled {
-            /* background: rgba(26, 26, 26, 0.95); */
+
+
+        .navbar.scrolled,
+        /* .navbar.scrolled .navbar-toggler, */
+        .navbar.scrolled .navbar-collapse 
+        {
             background-color: var(--cream);
+            /* สีครีม */
+            border-color: var(--cream);
             backdrop-filter: blur(10px);
+            /* ถ้าต้องการให้ขอบปุ่มเป็นสีเดียวกัน */
         }
+
 
         .navbar-brand {
             color: black;
@@ -467,7 +478,7 @@
         .btn-contact2 {
 
             transform: translate(120%, 100%);
-
+            
 
             color: black;
         }
@@ -557,6 +568,8 @@
             .hero {
                 padding-top: 5rem;
             }
+
+            .scroll-down {}
         }
 
         /* Responsive */
